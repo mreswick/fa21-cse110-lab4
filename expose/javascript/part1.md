@@ -6,6 +6,7 @@ values added:  20
 
 ### Q2:
 Line 13 prints:
+
 final result:  20
 
 ### Q3:
@@ -13,7 +14,8 @@ Line 9 prints:
 values added:  20
 
 ### Q4:
-Line 13 prints:
+Line 13 prints (in the test file *q3and4.js* in which I copied the code):
+
 q3and4.js:13 Uncaught ReferenceError: result is not defined
     at sumValues (q3and4.js:13)
     at q3and4.js:17
@@ -26,7 +28,9 @@ the if block, and so attempting to use it results in an
 
 ### Q5 and Q6:
 Nothing is printed by lines 9 and 13, as an error occurs before 
-they are reached at line 7. This error is given as:
+they are reached at line 7. This error is given as (in the test file
+*q5and6.js* in which I copied the code):
+
 q5and6.js:7 Uncaught TypeError: Assignment to constant variable.
     at sumValues (q5and6.js:7)
     at q5and6.js:17
