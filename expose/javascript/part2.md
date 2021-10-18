@@ -353,8 +353,11 @@ results in [2, 4, 6] gettiing returned.
 The output of the given code for question #19 is:
 
 1
+
 4
+
 3
+
 2
 
 This is because printNums gets called, which first prints 1.
