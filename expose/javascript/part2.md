@@ -54,7 +54,7 @@ not the discount, by 1 - discount) to each, and then
 stores it as the corresponding element with same index
 in the resulting array. It then returns this array.
 Also note:
-The retirmed array is a new array (compared to any array
+The returned array is a new array (compared to any array
 passed into the function call) since it is created
 on line 3, and that var statement thus only has the
 returned array have function scope, of not being
@@ -70,7 +70,7 @@ part2qs.js:12 Uncaught ReferenceError: i is not defined
     at discountPrices (part2qs.js:12)
     at part2qs.js:19
 
-This because i has block scope, since it is created using let in the "header"
+This is because i has block scope, since it is created using let in the "header"
 of a for loop (a for loop is somewhat special in that a variable
 created in its header is treated as belonging to its block).
 This usage of let means that i is not in scope for line 12,
@@ -110,7 +110,7 @@ This function will return a new array with three elements:
 [50, 100, 150]
 
 This array will have these values as a discount of 0.5 (i.e.,
-conceptualyl 50%) is applied to all of the elements of the passed
+conceptually 50%) is applied to all of the elements of the passed
 in array that are at the same index (of [100, 200, 300]). This
 is achieved by iterating over each of the elements of the inputted
 array, multiplying by 1 - discount, and storing the result
@@ -217,7 +217,7 @@ then occurring to yield 1.
 
 This is because 3 is a number, so the + tries to do
 number addition, and thus casts the null to 0,
-performing 3 + 1.
+performing 3 + 0.
 
 #### D) '3' + null:
 
@@ -358,7 +358,7 @@ The output of the given code for question #19 is:
 2
 
 This is because printNums gets called, which first prints 1.
-However, two settimeouts occur, one for a second delay and another
+However, two setTimeouts occur, one for a second delay and another
 for an instantaneous/no delay, and then another print statement.
 It happens, however, that the following console.log(4); statement
 gets executed before those of either timeout occur, with so next
