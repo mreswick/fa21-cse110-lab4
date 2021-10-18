@@ -63,7 +63,8 @@ a global variable; so it is a new variable with new
 contents bewteen calls). 
 
 ### Q5:
-Line 12 results in the following error:
+Line 12 results in the following error (from the test file
+*part2qs.js* in which I put the code for this question):
 
 part2qs.js:12 Uncaught ReferenceError: i is not defined
     at discountPrices (part2qs.js:12)
@@ -79,7 +80,7 @@ there.
 
 ### Q6: 
 Line 13 results in a similar error and message to the above question (in the test
-file *discountedPrice* in which I put the code):
+file *part2qs.js* in which I put the code):
 
 Uncaught ReferenceError: discountedPrice is not defined
     at discountPrices (part2qs.js:13)
